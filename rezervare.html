@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head> <!-- *********************************************************************************************** HEAD START -->
+   
+    <meta charset="UTF-8"> <!-- primul lucru din head! -->
+    <meta name="author" content="Pop-Vișan Cristina">
+    <meta name="application-name" content="FantasyTasteRestaurant">
+    <meta name="description" content="FantasyTasteRestaurantWebPage">
+    <meta name="keywords" content="restaurant, meniu, mancare, bar">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- dimensiunea se ajusteaza in functie de device -->
+    
+    <title>Fantasy Taste Restaurant</title> <!-- dupa toate meta-urile! -->
+    
+    <link href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    
+    <link rel="stylesheet" type="text/css" href="style.css">
+    
+</head> <!-- *********************************************************************************************** HEAD END -->
+
+
+<body> <!-- *********************************************************************************************** BODY START -->
+    
+    <header>
+        <a id="acasa"></a>
+       
+        <nav class="navigation_bar">
+            <a href="index.html">ACASĂ</a>
+            <a href="meniu.html">MENIU</a>
+            <a href="rezervare.html">REZERVARE</a>
+            <a href="recenzii.html">RECENZII</a>
+            <a href="galerie.html">GALERIE</a>
+            <a href="contact.html">CONTACT</a>
+        </nav>
+        
+        <h1><a href="index.html">Fantasy Taste Restaurant</a></h1>
+    </header>
+    
+    <main>     
+        <a id="rezervare"></a>
+        <h2>Rezervare</h2>
+        <div class="rezervare">
+            <img class="rezervare_img" src="meal.jpg" title="Nu o sa regreti ca ai ales sa mananci la noi!" alt="Persoane care servesc masa">
+            <div class="tabel_rezervare">
+                <form action=""> <!-- form colecteaza datele introduse de utilizator -->
+                    <!-- <label for="nume">Nume</label> -->
+                    <input type="text" placeholder="Nume">
+                    <!-- <label for="telefon">Telefon</label> -->
+                    <input type="tel" placeholder="Telefon"> 
+                    <!-- <label for="email">e-mail</label> -->
+                    <input type="email1" placeholder="e-mail"> 
+                    <!-- <label for="numar_persoane">Numar de persoane</label> -->
+                    <input type="number" placeholder="Număr persoane">
+                    <!-- <label for="data">Data</label> -->
+                    <input type="date" placeholder="Data">
+                    <!-- <label for="ora">Ora</label> -->
+                    <input type="time" placeholder="Ora" min="09:00" max="20:00">
+                    <!-- <label for="detalii">Detalii</label> -->
+                    <textarea class="detalii" placeholder="Detalii"></textarea>
+                    <input type="submit" value="Trimite rezervarea!">
+                </form>
+            </div>
+        </div>
+    </main>
+    
+    <footer>
+        <p>Copyright &copy; 2020 Fantasy Taste Restaurant | Toate drepturile rezervate</p>
+    </footer>
+
+    <div>
+        <ul class="column1">
+            <li><a href="index.html">ACASĂ</a></li>
+            <li><a href="meniu.html">MENIU</a></li>
+            <li><a href="rezervare.html">REZERVARE</a></li>
+            <li><a href="recenzii.html">RECENZII</a></li>
+            <li><a href="galerie.html">GALERIE</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+        </ul>
+        
+        <div class="column2">
+            <a href="index.html">Fantasy Taste<br></a>
+            <a href="index.html">Restaurant</a>
+        </div>
+        
+        <div class="column3">
+            <p>CONTACT</p>
+            <p><br>Telefon:<br><span>0746 XXX XXX</span></p>
+            <p>e-mail:<br><span>fantasytaste@restaurant.com</span></p>
+            <p>Adresă:<br><span>Cluj-Napoca, Aleea Răsăritului nr. 17</span></p>
+        </div>
+    </div>
+
+</body> <!-- *********************************************************************************************** BODY END -->
+
+</html>

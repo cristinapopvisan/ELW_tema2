@@ -1,0 +1,581 @@
+* {
+    margin: 0; /* pentru a-mi incadra imaginea exact dintr-un capat in celalalt */
+    padding: 0;
+    /* box-sizing: border-box; */
+}
+
+.clearfix::after { 
+    content: "";
+    clear: both; 
+    display: table; /* folosim table daca vrem ca elementele sa apara pe acelasi rand */
+}
+
+header { 
+    background: url("header_image.jpg") left bottom no-repeat;
+    background-size: cover;
+    /*height: 695px;*/
+}
+
+body {
+    background-color: #c1946a;
+}
+
+.stanga {
+    float: left;
+}
+
+.dreapta {
+    float: right; 
+}
+
+a { 
+    text-decoration: none; /* nu subliniaza link-ul */
+    color:inherit; /* lasa culoarea textului specificata in alte elemente, nu o schimba */
+}
+
+h1 {
+    color: #c1946a;
+    font-size: 600%;
+    /*text-align: center;*/
+    font-family: sacramento, cursive;
+    font-weight: bold;
+    padding-left: 3%;
+    padding-top: 2%;
+    text-shadow: 15px 15px 17px black;
+}
+
+h2 {
+    color: #3e4444;
+    font-size: 500%;
+    font-family: sacramento, cursive;
+    font-weight: inherit;
+    text-align: center;
+    padding-top: 2%;
+    text-shadow: 15px 15px 17px black;
+}
+
+h3 {
+    color: #c1946a; /* aceasta culoare este singura diferenta fata de h2 */
+    font-size: 500%;
+    font-family: sacramento, cursive;
+    font-weight: inherit;
+    text-align: center;
+    padding-top: 2%;
+    text-shadow: 15px 15px 17px black;
+}
+
+h4 {
+    color: #c1946a;
+    font-size: 600%;
+    font-family: sacramento, cursive;
+    font-weight: bold;
+    padding-left: 10%; /* la fel ca h1, cu aceasta mica diferenta de padding */
+    text-shadow: 15px 15px 17px black;
+}
+
+.intro {
+    background: url("image.jpg") left bottom no-repeat;
+    background-size: cover; 
+}
+
+.paragraf_restaurant {
+    color: #fff2df;
+    font-size: 130%;
+    font-family: poppins, sans-serif;
+    font-weight: normal;
+    text-align: left; /* mai frumos centrat (⌣́_⌣̀) */
+    padding-left: 600px;
+    margin-left: 60px;
+    margin-right: 60px;
+}
+
+.space1 {
+    padding-bottom: 110px;
+}
+
+.paragraf_bar {
+    color: #fff2df;
+    font-size: 130%;
+    font-family: poppins, sans-serif;
+    font-weight: normal;
+    text-align: left; /* mai frumos centrat (⌣́_⌣̀) */
+    padding-right: 590px;
+    padding-left: 120px;
+}
+
+.space2 {
+    padding-top: 150px;
+}
+
+.space3 {
+    padding-bottom: 100px;
+}
+
+.navigation_bar {
+    background-color: #fff2df;
+    opacity: 0.7;
+    text-align: center;
+    padding: 20px;
+}
+
+.navigation_bar a {
+    padding: 20px 50px 20px 50px; /* spatiul alocat butoanelor din bara de navigare => padding top, right, bottom, left (in aceasta ordine) */
+    font-family: montserrat, sans-serif;
+    letter-spacing: 2px;
+    font-size: 15px;
+    color: #c1946a;
+    text-decoration: none; /* implicit ancorele au underline */
+}
+
+.navigation_bar a:hover {
+    background-color: #c1946a;
+    color: #fff2df;
+}
+
+.box1 {
+    background-color: #82b74b;
+    text-align: left;
+    color: #3e4444;
+    width: 250px;
+    height: 250px;
+    padding: 35px;
+    margin: 40px;
+    margin-left: 400px;
+    font-family: poppins, sans-serif;
+    font-size: 15px;
+    position: absolute; /* se pune peste alte elemente */
+    box-shadow: 15px 15px 17px black;
+}
+
+.box2 {
+    background-color: #3e4444;
+    text-align: left;
+    color: #82b74b;
+    width: 250px;
+    height: 250px;
+    padding: 35px;
+    margin: 40px;
+    margin-left: 600px;
+    font-family: poppins, sans-serif;
+    font-size: 15px;
+    position: absolute; /* se pune peste alte elemente */
+    box-shadow: 15px 15px 17px black;
+}
+
+.sandwich_img {
+    margin-left: 250px;
+    width: 45%;
+    border: 10px solid #3e4444;
+    border-radius: 6px;
+}
+
+.buritto_img {
+    width: 50%;
+    border: 10px solid #82b74b;
+    border-radius: 6px;
+}
+
+.arrow_right {
+    width: 25%;
+    padding-top: 120px;
+}
+
+.arrow_left {
+    width: 25%;
+    padding-top: 90px;
+    padding-left: 280px;
+}
+
+.block1 {
+    display: inline-block;
+    padding-left: 70px;
+}
+
+.block2 {
+    display: inline-block;
+    padding-left: 70px;
+    padding-bottom: 40px;
+}
+
+.parallax1 {
+    background-image: url("parallax1.jpg");
+    min-height: 450px; 
+    background-attachment: fixed; /* parallax scrolling effect */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.parallax2 {
+    background-image: url("parallax2.jpg");
+    min-height: 450px; 
+    background-attachment: fixed; /* parallax scrolling effect */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.parallax3 {
+    background-image: url("parallax3.jpg");
+    min-height: 450px; 
+    background-attachment: fixed; /* parallax scrolling effect */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.meniu {
+    display: inline-block;
+    padding-left: 90px;
+    padding-bottom: 50px;
+}
+
+.p2 {
+    color: #fff2df;
+    font-size: 30px;
+}
+
+.meniu span {
+    color: #fff2df;
+    font-size: 15px;
+}
+
+.meniu1 {
+    background-color: #3e4444;
+    text-align: left;
+    color: #82b74b;
+    width: 610px;
+    height: 440px;
+    padding: 40px;
+    margin: 20px;
+    margin-top: 60px;
+    font-family: poppins, sans-serif;
+    font-size: 15px;
+    position: absolute;
+    box-shadow: 15px 15px 17px black;
+}
+
+.meniu2 {
+    background-color: #82b74b;
+    text-align: right;
+    color: #3e4444;
+    width: 600px;
+    height: 570px;
+    padding: 40px;
+    margin-left: 600px;
+    font-family: poppins, sans-serif;
+    font-size: 15px; 
+    box-shadow: 15px 15px 17px black;
+}
+
+.bar {
+    background: url("alcohol_right.jpg") right top no-repeat, url("alcohol_left.jpg") right top;
+    padding-bottom: 50px;
+}
+
+.rezervare {
+    padding-left: 90px;
+}
+
+.rezervare_img {
+    width: 32%;
+    box-shadow: 15px 15px 17px black;
+    margin-right: 80px;
+    margin-left: 60px;
+    border: 10px solid #82b74b;
+    border-radius: 6px;
+}
+
+.tabel_rezervare {
+    border-radius: 10px;
+    background-color: #3e4444;
+    padding: 30px;
+    width: 40%;
+    margin-left: 50px;
+    margin-right: 40px;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    display: inline-block;
+    box-shadow: 15px 15px 17px black;
+}
+
+input[type=text], input[type=email1], input[type=tel], input[type=number], input[type=date], input[type=time] {
+    width: 49%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 2px solid #82b74b;
+    border-radius: 6px;
+    box-sizing: border-box;
+    background-color: #fff2df;
+    color: #3e4444;
+    font-family: poppins, sans-serif;
+}
+
+input[type=email2] {
+    width: 99%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 2px solid #82b74b;
+    border-radius: 6px;
+    box-sizing: border-box;
+    background-color: #fff2df;
+    color: #3e4444;
+    font-family: poppins, sans-serif;
+}
+
+.detalii {
+    width: 99%;
+    height: 100px;
+    padding: 12px 20px;
+    margin: 8px 0;
+    border: 2px solid #82b74b;
+    border-radius: 6px;
+    box-sizing: border-box;
+    background-color: #fff2df;
+    color: #3e4444;
+    resize: none;
+    outline: none;
+    font-family: poppins, sans-serif;
+}
+
+input[type=submit] {
+    width: 99%;
+    background-color: #82b74b;
+    color: #3e4444;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-family: poppins, sans-serif;
+    font-size: 17px;
+}
+
+input[type=submit]:hover {
+    background-color: #c1946a;
+    color: #3e4444;
+}
+
+.recenzii {
+    background: url("plates.jpg");
+    height: 750px;
+    background-size: cover;
+    text-align: center;
+    font-size: 15px;
+}
+
+.person {
+    width: 40%;
+    margin: 10px;
+}
+
+.recenzie1 {
+    background-color: #82b74b;
+    text-align: left;
+    color: #3e4444;
+    width: 390px;
+    height: 230px;
+    padding: 15px;
+    margin-left: 60px;
+    font-family: poppins, sans-serif;
+    box-shadow: 15px 15px 17px black;
+    display: inline-block;
+}
+
+.recenzie2 {
+    background-color: #3e4444;
+    text-align: left;
+    color: #82b74b;
+    width: 390px;
+    height: 230px;
+    padding: 15px;
+    margin-left: 60px;
+    font-family: poppins, sans-serif;
+    box-shadow: 15px 15px 17px black;
+    display: inline-block;
+}
+
+.recenzie3 {
+    background-color: #82b74b;
+    text-align: left;
+    color: #3e4444;
+    width: 390px;
+    height: 230px;
+    padding: 15px;
+    margin-left: 60px;
+    font-family: poppins, sans-serif;
+    box-shadow: 15px 15px 17px black;
+    display: inline-block;
+}
+
+.galerie {
+    background-color: #3e4444;
+}
+
+.row {
+    content: "";
+    clear: both;
+    display: table;
+    padding-left: 75px;
+}
+
+.column {
+    float: left;
+    width: 20%;
+    padding: 24px 24px; /* spatiul dintre poze stanga-dreapta, sus-jos */
+}
+
+.img {
+    width: 100%;
+    transition: transform .2s;
+    box-shadow: 15px 15px 17px black;
+}
+
+.descriere {
+    text-align: center;
+    font-family: poppins, sans-serif;
+    letter-spacing: 2px;
+    font-size: 15px;
+    color: #82b74b;
+    font-weight: bold;
+    padding-top: 10px;
+}
+
+.img:hover {
+    transform: scale(1.4);  
+}
+
+.contact p {
+    text-align: center;
+    font-family: poppins, sans-serif;
+    letter-spacing: 2px;
+    font-size: 15px;
+    color: #3e4444;
+    font-weight: bold;
+}
+
+.contact span {
+    color: #fff2df;
+}
+
+.map {
+    width: 600px;
+    height: 350px; 
+    margin-left: 50px;
+    margin-top: 40px;
+    box-shadow: 15px 15px 17px black;
+}
+
+.buttons {
+    margin-bottom: 20px;
+    padding-left: 188px;
+}
+
+.buttons a {
+    margin: 10px;
+}
+
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    border-radius: 50%;
+    box-shadow: 10px 10px 17px black;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+}
+
+.fa-twitter {
+    background: #55ACEE;
+    color: white;
+}
+
+.fa-instagram {
+    background: #125688;
+    color: white;
+}
+
+.fa-pinterest {
+    background: #cb2027;
+    color: white;
+}
+
+footer {
+    background-color: #3e4444;
+    color: #82b74b;
+    text-align: center;
+    font-family: poppins, sans-serif;
+    font-size: 15px; 
+    padding: 10px;
+}
+
+.column1 {
+    background-color: #82b74b;
+    float: left;
+    width: 33.33%;
+    text-align: center;
+    font-family: poppins, sans-serif;
+    font-size: 15px; 
+    padding-top: 20px;
+    padding-bottom: 26px;
+    list-style-position: inside; /* pentru ca bulinele listei sa se afle langa elemente! */
+}
+
+.column1 a {
+    text-decoration: none;
+    letter-spacing: 2px;
+    font-size: 15px;
+    color: #3e4444;
+    padding: 10px;
+    font-weight: bold;
+}
+
+.column1 a:hover {
+    color: #fff2df;
+}
+
+li {
+    margin: 10px; /* distanta intre elementele listei */
+}
+
+.column2 {
+    background-color: #82b74b;
+    float: left;
+    width: 33.33%;
+    text-align: center;
+    font-family: sacramento, cursive;
+    color: #3e4444;
+    font-size: 40px; 
+    font-weight: bold;
+    padding: 66px 0px 67px 0px;
+}
+
+.column3 {
+    background-color: #82b74b;
+    float: left;
+    width: 33.33%;
+    padding-top: 32px;
+    padding-bottom: 39px;
+    text-align: center;
+    font-family: poppins, sans-serif;
+    letter-spacing: 2px;
+    font-size: 15px;
+    color: #3e4444;
+    font-weight: bold;
+}
+
+.column3 span {
+    color: #fff2df;
+}
